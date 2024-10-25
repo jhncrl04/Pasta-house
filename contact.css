@@ -27,6 +27,10 @@
   margin-bottom: 100px;
 }
 
+.wrapper .header-wrapper img{
+  top: -20%;
+}
+
 .wrapper form {
   display: flex;
   flex-direction: column;
