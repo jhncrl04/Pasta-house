@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="order-page.css" />
+    <script src="order.js" defer></script>
+
+    <title>Pasta House - Shrimp Scampi</title>
+  </head>
+  <body>
+    <nav>
+      <a href="homepage.html"><h1 id="logo-text">Pasta House</h1></a>
+      <div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="homepage.html" class="nav-links">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-links">Product</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-links">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutus.html" class="nav-links">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-links">Sign out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <div class="order-wrapper">
+        <div class="product-wrapper">
+          <img
+            src="Shrimp-Scampi-Pasta-RCSq.jpg"
+            alt=""
+            id="selected-product-img"
+          />
+          <div class="product-inner-wrapper">
+            <div class="product-info-wrapper">
+              <p id="selected-product-name">Shrimp Scampi</p>
+              <p id="selected-product-description">
+                Juicy, perfectly cooked shrimp sautéed in a rich garlic, lemon,
+                and butter sauce, tossed with tender pasta for a vibrant, zesty
+                seafood dish that's full of flavor!
+              </p>
+              <p id="selected-product-price">&#8369;155.00</p>
+            </div>
+
+            <div class="checkout-wrapper">
+              <h2>Order Information</h2>
+              <div class="form">
+                <span class="input-wrapper">
+                  <label for="customer-name">Name:</label>
+                  <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Sherlock Holmes"
+                  />
+                </span>
+                <span class="input-wrapper">
+                  <label for="customer-address">Address:</label>
+                  <input
+                    type="text"
+                    id="customer-address"
+                    placeholder="221B Baker Street"
+                  />
+                </span>
+                <span class="input-wrapper">
+                  <label for="customer-payment">Payment:</label>
+                  <input
+                    type="text"
+                    id="customer-payment"
+                    placeholder="200.00"
+                  />
+                </span>
+                <button
+                  onclick="confirmOrder()"
+                  class="place-order-btn main-btn"
+                >
+                  Place order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ingredients-wrapper">
+          <h2>ingredients</h2>
+          <div class="ingredients-inner-wrapper">
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-1"
+                value="Pasta"
+                class="active"
+                checked
+                disabled
+              />
+              <label for="ingredient-1">Pasta</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-5"
+                value="black pepper"
+                class="active"
+                checked
+                disabled
+              />
+              <label for="ingredient-5">Black Pepper</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-6"
+                value="salt"
+                class="active"
+                checked
+                disabled
+              />
+              <label for="ingredient-6">Salt</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-11"
+                value="garlic"
+                class="active"
+                checked
+                disabled
+              />
+              <label for="ingredient-11">Garlic</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-12"
+                value="onion"
+                class="active"
+                checked
+                disabled
+              />
+              <label for="ingredient-12">Onion</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-13"
+                value="olive oil"
+                class="active"
+                checked
+                disabled
+              />
+              <label for="ingredient-13">Olive Oil</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-14"
+                value="pepper flakes"
+                class="active"
+                checked
+                disabled
+              />
+              <label for="ingredient-14">Pepper Flakes</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-15"
+                value="shrimp"
+                class="active"
+                checked
+                disabled
+              />
+              <label for="ingredient-15">Shrimp</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-16"
+                value="butter"
+                class="active"
+                checked
+                disabled
+              />
+              <label for="ingredient-16">Butter</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-17"
+                value="lemon juice"
+                class="active"
+                checked
+                disabled
+              />
+              <label for="ingredient-17">Lemon Juice</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-18"
+                value="white wine"
+                class="active"
+                checked
+                disabled
+              />
+              <label for="ingredient-18">White Wine</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-4"
+                value="parmesan cheese"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-4">Parmesan Cheese</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-7"
+                value="chicken"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-7">Chicken</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-8"
+                value="vodka"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-8">Vodka</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-9"
+                value="tomato sauce"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-9">Tomato Sauce</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-10"
+                value="heavy cream"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-10">Heavy Cream</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-2"
+                value="pancetta"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-2">Pancetta</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-3"
+                value="Eggs"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-3">Eggs</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-19"
+                value="ground pork"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-19">Ground Pork</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-20"
+                value="carrots"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-20">Carrots</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-21"
+                value="celery"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-21">Celery</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-22"
+                value="red wine"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-22">Red Wine</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-23"
+                value="beef stock"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-23">Beef Stock</label>
+            </span>
+
+            <span>
+              <input
+                type="checkbox"
+                name="ingredients"
+                id="ingredient-24"
+                value="tomatoes"
+                class="inactive"
+                disabled
+              />
+              <label for="ingredient-24">Tomatoes</label>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="next-prev-wrapper">
+        <a href="chicken-penne.html">
+          <img src="chevron-up-solid.svg" alt="" class="arrow icon" />
+        </a>
+        <div>
+          <div class="pagination"></div>
+          <div class="pagination"></div>
+          <div class="pagination"></div>
+          <div class="pagination active"></div>
+          <div class="pagination"></div>
+          <div class="pagination"></div>
+        </div>
+        <a href="spaghetti-bolognese.html">
+          <img src="chevron-down-solid.svg" alt="" class="arrow icon" />
+        </a>
+      </div>
+    </div>
+    <footer id="footer">
+      <img src="logo-v2.png" alt="" class="footer-logo" />
+      <div class="footer-nav-link">
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="homepage.html" class="footer-links">Home</a></li>
+          <li><a href="product.html" class="footer-links">Product</a></li>
+          <li><a href="contact.html" class="footer-links">Contact</a></li>
+          <li><a href="aboutus.html" class="footer-links">About Us</a></li>
+        </ul>
+      </div>
+      <div class="contact-wrapper">
+        <h2>Contact Us @</h2>
+        <span>
+          <img src="envelope-solid.svg" alt="" class="icon" />
+          <p>restaurant@pastahouse.com</p>
+        </span>
+        <span>
+          <img src="map-marker-alt-solid.svg" alt="" class="map-marker icon" />
+          <p class="shop-address">
+            L.Mercado St . Cor . C. L . Hilario St ., <br />
+            Bustos, 3007 Bulacan
+          </p>
+        </span>
+        <span class="icon-wrapper">
+          <a href="https://facebook.com/basbas0909" target="_blank">
+            <img src="facebook-brands-solid.svg" alt="" class="socials icon" />
+          </a>
+          <a href="https://www.instagram.com/jhncrlsrvdd/" target="_blank">
+            <img src="instagram-brands-solid.svg" alt="" class="socials icon" />
+          </a>
+          <a href="https://x.com/TCBScans" target="_blank">
+            <img src="twitter-brands-solid.svg" alt="" class="socials icon" />
+          </a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

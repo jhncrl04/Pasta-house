@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login-register.css" />
+    <link rel="stylesheet" href="forgot-pass.css" />
+    <script src="login.js" defer></script>
+    <script src="forgotpass.js" defer></script>
+    <title>Pasta House - Account Recovery</title>
+  </head>
+  <body>
+    <div class="bg-illusion"></div>
+    <div class="bg-wrapper wrapper">
+      <img src="hero-image.png" alt="" class="hero-img" />
+      <div class="form" id="login-form">
+        <h1 class="logo-header">Pasta House</h1>
+        <p class="label">Username</p>
+        <input type="text" id="user-username" class="username-input" />
+        <p class="label">Password</p>
+        <input type="password" id="password" class="password-input hidden" />
+        <p class="show-pass-btn" id="show-pass-btn-login">Show</p>
+        <button class="login-form-btn" id="login-btn">Log In</button>
+        <a href="forgot-pass.html" target="_self" id="forgot-pass-link">
+          Forgot your password?
+        </a>
+        <hr />
+        <a
+          href="register.html"
+          target="_self"
+          class="login-form-btn"
+          id="register-btn"
+        >
+          Create account
+        </a>
+      </div>
+    </div>
+
+    <div class="forgot-pass-wrapper wrapper">
+      <div id="recover-acc-form">
+        <h1>Reset Password</h1>
+        <p class="label">Email</p>
+        <input type="email" id="user-email" class="email-input" />
+        <p class="label">Enter Code</p>
+        <div class="code-wrapper">
+          <input type="text" id="code-input" />
+          <button
+            id="send-code-btn"
+            class="secondary-btn btn"
+            onclick="sendCodeAlert()"
+          >
+            Send Code
+          </button>
+        </div>
+        <p class="label">New Password</p>
+        <input
+          type="password"
+          id="user-password"
+          class="new-password-input hidden"
+        />
+        <p
+          onclick="showPass()"
+          class="show-pass-btn"
+          id="show-pass-btn-forgot-pass"
+        >
+          Show
+        </p>
+
+        <div class="button-wrapper">
+          <button
+            onclick="newPassAlert()"
+            class="main-btn btn"
+            id="confirm-new-pass"
+          >
+            Confirm New Password
+          </button>
+          <a href="index.html" class="secondary-btn btn" id="back-to-login-btn"
+            >Return to Log In</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

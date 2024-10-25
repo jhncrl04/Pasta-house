@@ -1,0 +1,147 @@
+@keyframes slideUpAnim {
+  0% {
+    transform: translateY(1000px);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.wrapper {
+  width: 100%;
+
+  padding: 0;
+  padding-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  scroll-margin: 100px;
+
+  text-align: center;
+}
+
+.wrapper .header-wrapper {
+  margin-bottom: 100px;
+}
+
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f7f8;
+  width: 50%;
+
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+  padding: 30px 50px;
+  margin-bottom: 100px;
+}
+.wrapper form h2 {
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.wrapper form .inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.wrapper form .inputs .input-wrapper {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.wrapper form #message-div {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  width: 100%;
+}
+
+.wrapper form .inputs .input-wrapper label,
+.wrapper form #message-div label,
+.wrapper form .submit-btn {
+  color: #2c2c2c;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.wrapper form .inputs .input-wrapper input,
+.wrapper form #message-div textarea {
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: normal;
+
+  border: none;
+  border: 1px solid rgba(128, 128, 128, 0.7);
+  border-radius: 5px;
+}
+.wrapper form .inputs .input-wrapper input {
+  width: 100%;
+}
+.wrapper form #message-div textarea {
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 100%;
+  height: 250px;
+}
+
+.wrapper form .submit-btn {
+  margin: 0;
+  border: 1px solid #e45858;
+  color: #f5f7f8;
+  font-size: 15px;
+  background: #e45858;
+  border-radius: 10px;
+  padding: 10px 30px;
+
+  transition: ease-out 500ms;
+}
+
+.wrapper form .submit-btn:hover {
+  background: #f5f7f8;
+  color: #e45858;
+}
+
+.wrapper .contact-info-wrapper {
+  width: 70%;
+  gap: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper .contact-info-wrapper div span {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  margin-bottom: 20px;
+}
+.wrapper .contact-info-wrapper div span .icon {
+  height: 22px;
+}
+.wrapper .contact-info-wrapper div span h3 {
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .contact-info-wrapper div p {
+  color: rgba(44, 44, 44, 0.8);
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-left: 65px;
+  line-height: 28px;
+  text-align: left;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login-register.css" />
+    <script src="login.js" defer></script>
+
+    <title>Pasta House - Log In</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="hero-image.png" alt="" class="hero-img" />
+      <div class="form" id="login-form">
+        <h1 class="logo-header">Pasta House</h1>
+        <p class="label">Username</p>
+        <input type="text" id="user-username" class="username-input" />
+        <p class="label">Password</p>
+        <input
+          type="password"
+          id="user-password"
+          class="password-input hidden"
+        />
+        <p onclick="showPass()" class="show-pass-btn" id="show-pass-btn-login">
+          Show
+        </p>
+        <button
+          onclick="verifyAcc()"
+          class="login-form-btn main-btn"
+          id="login-btn"
+        >
+          Log In
+        </button>
+        <a href="forgot-pass.html" target="_self" id="forgot-pass-link">
+          Forgot your password?
+        </a>
+        <hr />
+        <a
+          href="register.html"
+          target="_self"
+          class="login-form-btn secondary-btn"
+          id="register-btn"
+        >
+          Create account
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

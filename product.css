@@ -1,0 +1,123 @@
+.wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 150px;
+
+  gap: 75px;
+}
+
+.wrapper .menu-header {
+  scroll-margin: 150px;
+  width: 30%;
+  text-align: center;
+}
+
+.wrapper .menu-header h1 {
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  font-family: "Poppins";
+  font-weight: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.wrapper .menu-header .menu-catchphrase {
+  font-size: 18px;
+  color: #585858;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table tr {
+  width: 100%;
+}
+
+table tr td .product-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+table tr td .product-wrapper .img-wrapper {
+  width: 45%;
+  height: 250px;
+
+  overflow: hidden;
+}
+
+table tr td .product-wrapper .img-wrapper .product-preview {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  transition: all 300ms;
+}
+table tr td .product-wrapper .img-wrapper .product-preview:hover {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.15);
+}
+table tr td .product-wrapper .product-info-wrapper {
+  position: relative;
+  width: 65%;
+
+  padding: 10px 15px;
+  background: #f5f7f8;
+}
+
+table tr td .product-wrapper .product-info-wrapper .product-name {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Poppins";
+  letter-spacing: 2px;
+
+  color: #2c2c2c;
+
+  margin-bottom: 10px;
+}
+
+table tr td .product-wrapper .product-info-wrapper .product-description,
+table tr td .product-wrapper .product-info-wrapper .product-price {
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+table tr td .product-wrapper .product-info-wrapper .product-description {
+  font-size: 18px;
+  color: #585858;
+}
+table tr td .product-wrapper .product-info-wrapper span {
+  position: absolute;
+  top: 80%;
+  gap: 20px;
+
+  display: flex;
+  align-items: center;
+}
+table tr td .product-wrapper .product-info-wrapper span .product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #dd4227;
+}
+
+table tr td .product-wrapper .product-info-wrapper span .order-btn {
+  color: #2c2c2c;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 5px 10px;
+  border: 1px solid #2c2c2c;
+
+  transition: ease-out 500ms;
+}
+
+table tr td .product-wrapper .product-info-wrapper span .order-btn:hover {
+  border: 1px solid #dd4227;
+  background: #dd4227;
+  color: #f5f7f8;
+}

@@ -1,0 +1,135 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 100px;
+
+  width: 100%;
+}
+
+.hero-img {
+  height: 99vh;
+}
+
+.form {
+  position: relative;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 25px 25px 30px 0 rgba(97, 97, 97, 0.2);
+
+  background: #faf9f6;
+
+  height: 50%;
+  width: 30%;
+  padding: 10px 40px 50px 40px;
+  border: 1px solid rgba(97, 97, 97, 0.5);
+  border-radius: 10px;
+}
+
+.logo-header {
+  font-size: 65px;
+  font-weight: 900;
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  margin: 20px 0 10px 0;
+}
+
+.label {
+  width: 100%;
+
+  text-align: left;
+
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+input {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 18px;
+  margin: 5px 0 10px 0;
+
+  outline: none;
+  border: none;
+  border: 1px solid rgba(97, 97, 97, 0.7);
+  border-radius: 5px;
+}
+
+.password-input {
+  padding: 5px 80px 5px 10px;
+}
+
+.show-pass-btn {
+  position: absolute;
+  left: 80%;
+
+  cursor: pointer;
+
+  font-size: 15px;
+  text-decoration: underline;
+}
+#show-pass-btn-login {
+  top: 48.5%;
+}
+#show-pass-btn-register {
+  top: 65%;
+}
+
+.login-form-btn,
+.register-form-btn {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fffffe;
+  background: #e45858;
+  padding: 10px 0;
+  border: none;
+  border: 1px solid rgba(97, 97, 97, 0.5);
+  border-radius: 5px;
+}
+
+#login-btn,
+#signup-btn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+#login-btn {
+  margin-bottom: 15px;
+}
+
+#register-btn {
+  text-align: center;
+  color: #e45858;
+  border: 1px solid #e45858;
+  background: #fffffe;
+  padding: 10px 20px;
+}
+
+#forgot-pass-link {
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #2b2c34;
+}
+
+hr {
+  padding: 0px 20px;
+  margin: 10px 0 20px 0;
+  width: 80%;
+  color: grey;
+  height: 2px;
+}
+
+.log-in-link {
+  font-size: 16px;
+  font-family: "Poppins";
+  margin-top: 10px;
+  color: #2b2c34;
+}
